@@ -1,0 +1,39 @@
+
+
+body{
+    background-color: rgb(11, 11, 11);
+}
+
+.d1{
+    height: 498px;
+    width: 80%;
+    background-color:black;
+    text-align: center;
+   margin-left: 130px;
+    /* margin-left: 210px; */
+    
+}
+.img1{
+    height: 83vh;
+    width: 80%;
+}
+.img2{
+    height: 83vh;
+    width: 80%;
+}
+.img3{
+    height: 83vh;
+    width: 80%;
+}
+.img4{
+    height: 83vh;
+    width: 80%;
+}
+
+
+
+/* .main{
+    height: 200px;
+    width: 100%;
+    background-color: black;
+} */

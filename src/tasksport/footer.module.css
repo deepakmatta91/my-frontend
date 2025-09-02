@@ -1,0 +1,53 @@
+/* Main Section Container */
+.main {
+    width: 100%;
+    background-color: rgb(20, 19, 19);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Left Section */
+.m2 {
+    flex: 1 1 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Right Section */
+.m3 {
+    flex: 1 1 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    color: aliceblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Utility Classes */
+.list {
+    color: brown;
+}
+
+.matters {
+    color: aliceblue;
+}
+
+/* ===== Responsive Layout Adjustments ===== */
+
+@media (min-width: 768px) {
+    .m2,
+    .m3 {
+        flex: 1 1 50%;
+    }
+
+    .main {
+        flex-wrap: nowrap;
+        height: 400px;
+    }
+}

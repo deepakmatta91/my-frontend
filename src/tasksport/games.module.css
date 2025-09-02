@@ -1,0 +1,36 @@
+.app {
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+    padding: 20px;
+  }
+  
+  .gameCard {
+    background-color: #444;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+  }
+  
+  .image {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .title {
+    margin: 10px 0;
+  }
+  
+  .playButton {
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .playButton:hover {
+    background-color: darkorange;
+  }

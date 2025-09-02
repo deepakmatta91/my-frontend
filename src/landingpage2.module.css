@@ -1,0 +1,135 @@
+.wrapper {
+  background: #000;
+  color: #fff;
+  padding: 80px 20px;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.statBox {
+  max-width: 400px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 30px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  animation: riseUp 1s ease forwards;
+}
+
+.statValue {
+  font-size: 48px;
+  color: #8aff8a;
+  margin-bottom: 10px;
+}
+
+.statTitle {
+  font-size: 20px;
+  color: #87cefa;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.statDesc {
+  font-size: 16px;
+  color: #ccc;
+}
+
+.scrollSection {
+  margin: 40px 0;
+  font-size: 18px;
+  color: #fff;
+}
+
+.highlight {
+  color: #ff69b4;
+  font-weight: bold;
+}
+
+.arrow {
+  font-size: 32px;
+  margin-top: 10px;
+  animation: bounce 1.5s infinite;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 20px;
+  border-radius: 15px;
+  backdrop-filter: blur(6px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  transition: transform 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.icon {
+  margin-bottom: 10px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(10px); }
+}
+
+@keyframes riseUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .statBox {
+    margin: 0 auto;
+  }
+
+  .statValue {
+    font-size: 36px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .statValue {
+    font-size: 32px;
+  }
+
+  .scrollSection {
+    font-size: 16px;
+  }
+}

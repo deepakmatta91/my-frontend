@@ -1,0 +1,239 @@
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 60px 40px;
+  background: linear-gradient(135deg, #0f0f0f, #000000);
+  font-family: 'Segoe UI', sans-serif;
+  color: #fff;
+  gap: 30px;
+  animation: fadeUp 1.2s ease-out forwards;
+}
+
+.left {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+  animation: fadeUp 1.2s ease-out forwards;
+}
+
+.right {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  min-width: 300px;
+  animation: fadeSlide 1.4s ease forwards;
+}
+
+.badge {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 6px 14px;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  margin-bottom: 20px;
+  backdrop-filter: blur(6px);
+  display: inline-block;
+  color: #ccc;
+  animation: float 2.5s ease-in-out infinite;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.08);
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.2;
+  animation: zoomGlow 1s ease-in-out;
+  letter-spacing: 1px;
+}
+
+.gradientText {
+  background: linear-gradient(90deg, #ff7a18, #af2dff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: flicker 2s infinite alternate;
+}
+
+.subtitle {
+  margin-top: 16px;
+  color: #bbb;
+  line-height: 1.6;
+  font-size: 1.1rem;
+  animation: fadeUp 1.3s ease;
+}
+
+.buttons {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.primary,
+.secondary {
+  border-radius: 12px;
+  padding: 12px 28px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.primary {
+  background: linear-gradient(90deg, #ff7a18, #af2dff);
+  border: none;
+  color: white;
+  box-shadow: 0 0 12px rgba(255, 122, 24, 0.4);
+  animation: fadeUp 1.4s ease;
+}
+
+.primary:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 20px rgba(255, 122, 24, 0.6);
+}
+
+.secondary {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid #555;
+  color: #ddd;
+  backdrop-filter: blur(4px);
+  animation: fadeUp 1.5s ease;
+  -webkit-animation: fadeUp 1.5s ease;
+}
+
+.secondary:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: scale(1.03);
+}
+
+.testimonial {
+  margin-top: 40px;
+  font-size: 0.95rem;
+  color: #aaa;
+  line-height: 1.6;
+  animation: fadeUp 1.6s ease;
+}
+
+.author {
+  margin-top: 10px;
+  font-size: 0.85rem;
+  color: #888;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 16px;
+  min-height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: #fff;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  height: 360px;
+  max-width: 500px;
+  margin: 70px auto 0;
+  animation: fadeUp 1.2s ease;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px) scale(1.02);
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 12px 30px rgba(255, 122, 24, 0.15);
+}
+
+.cardImage {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  object-fit: contain;
+  animation: zoomIn 1s ease;
+}
+
+/* Keyframes */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes zoomGlow {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+    text-shadow: 0 0 0 transparent;
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.15);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+@keyframes flicker {
+  0% {
+    opacity: 1;
+    text-shadow: 0 0 6px #ff7a18;
+  }
+  100% {
+    opacity: 0.9;
+    text-shadow: 0 0 10px #af2dff;
+  }
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 1440px) {
+  .title {
+    font-size: 2.8rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .hero {
+    flex-direction: column;
+    padding: 50px
+    
+  }
+}

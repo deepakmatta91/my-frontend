@@ -1,0 +1,38 @@
+.table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .header, .row {
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 150px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .header {
+    background-color: #f4f4f4;
+    font-weight: bold;
+  }
+  
+  .row:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .last5 {
+    display: flex;
+    gap: 5px;
+  }
+  
+  .W {
+    color: green;
+  }
+  
+  .L {
+    color: red;
+  }
+  
+  .D {
+    color: gray;
+  }

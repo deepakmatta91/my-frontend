@@ -1,0 +1,56 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    /* height: 100vh; */
+    width: 100vw;
+}
+
+.maincontainer{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(93, 93, 10);
+    
+
+    opacity: 80%;
+    display: flex;
+    flex-direction: row;
+}
+.main1{
+    height: 100vh;
+    width: 50%;
+    /* background-color: black; */
+}
+.matter{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 100px;
+   
+    color: rgb(243, 240, 240);
+}
+p{
+    color: antiquewhite;
+    margin-left: 80px;
+    
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.list{
+    color: aliceblue;
+}
+
+
+.main2{
+    height: 100vh;
+    width: 50%;
+    /* background-color: rgb(149, 30, 30); */
+}
+.img{
+    background-image: url(./sports.png);
+    height: 100vh;
+    width: 100%;
+    background-size: contain;
+
+}
+.b1{
+    margin-left: 30px;
+    margin-top: 30px;
+}

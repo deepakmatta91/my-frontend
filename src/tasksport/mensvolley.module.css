@@ -1,0 +1,71 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    padding: 16px;
+    background-color: #fff;
+  }
+  
+  .header {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+  }
+  
+  .category {
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    padding: 4px 8px;
+    margin-bottom: 8px;
+  }
+  
+  .event,
+  .location {
+    font-size: 14px;
+    margin-bottom: 4px;
+  }
+  
+  .body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  
+  .team {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 8px;
+  }
+  
+  .teamName {
+    font-size: 14px;
+  }
+  
+  .startTime {
+    text-align: center;
+  }
+  
+  .time {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .actions {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .button {
+    padding: 8px 16px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }

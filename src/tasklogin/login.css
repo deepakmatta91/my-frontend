@@ -1,0 +1,122 @@
+ body {
+    background-color: #020202; 
+    /* background-image: url(./bg3.jpg); */
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+   
+
+}
+
+.card {
+    /* background-color: rgb(241, 239, 239);
+    */background-image: url(./bg3.jpg);
+   
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 90%;
+    background:  transparent  rgba(0, 0, 0, 23);
+    border:  0.5px solid black;
+    padding: 20px 30px;
+    border-radius: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    /*max-width: 300px;
+    */height: 400px;
+    width: 400px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+}
+
+.card h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.card input[type="text"],
+.card input[type="password"] {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.card button {
+    width: 50%;
+    padding: 10px;
+    background-color: #0af212;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.card button:hover {
+    background-color: #06f112;
+}
+
+.Toastify__toast {
+    font-size: 16px;
+    font-weight: bold;
+}
+.social-icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* color: #ccc; */
+    gap: 10px;
+    font-size: x-large;
+}
+.iconfacebook{
+    color: rgb(36, 36, 189);
+    box-shadow: 0 4px 8px rgba(222, 219, 219, 0.9);
+
+}
+.icongoogle{
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+}
+.icontwitter{
+
+}
+.icontwitter{
+    color: rgb(0, 225, 255);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+}
+.iconinstagram{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+    color: rgb(235, 213, 12);
+    
+}
+p{
+    color: antiquewhite;
+}
+
+
+.button_name {
+    text-decoration: none;
+    color: white;
+} 

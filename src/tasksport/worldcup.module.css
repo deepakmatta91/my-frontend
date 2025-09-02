@@ -1,0 +1,165 @@
+body{
+  padding: 0;
+  margin: 0;
+  /* display: flex;
+  flex-direction: row; */
+  
+}
+
+.main{
+  height: 100vh;
+  width: 100%;
+  background-color: aliceblue;
+  
+  
+}
+.nav{
+  height: 70px;
+  width: 100%;
+  background-color: #223577;
+  display: flex;
+  justify-content: center;
+  
+}
+.mater{
+  color: aliceblue;
+  
+}
+.nav1{
+  height: 70px;
+  width: 100%;
+  background-color: #223577;
+  display: flex;
+  justify-content: center;
+  
+  
+}
+.containt{
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 200px;
+
+}
+.secondcontainer{
+  height: 300px;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+}
+.left{
+  height: 300px;
+  width: 50%;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: row;
+}
+.left1{
+  height: 300px;
+  width: 50%;
+  background-color: rgb(27, 24, 24);
+  
+}
+.left11{
+  height: 300px;
+  width: 50%;
+  background-color: rgb(142, 115, 115);
+  
+}
+.para{
+  font-size: 2px black;
+}
+
+.left2{
+  height: 300px;
+  width: 50%;
+  background-color: rgb(240, 186, 186);
+}
+.right{
+  height: 300px;
+  width: 50%;
+  background-color: rgb(207, 71, 71);
+}
+
+
+
+
+
+
+.scheduleContainer {
+  border: 1px solid #ddd;
+  padding: 16px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+.matchInfo {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.matchNumber {
+  font-weight: bold;
+}
+
+.matchDay {
+  color: #888;
+  margin-left: 200px;
+}
+
+.teams {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  /* align-items: center; */
+  margin-bottom: 8px;
+}
+
+.team {
+  display: flex;
+  align-items: center;
+}
+
+.teamLogo {
+  width: 24px;
+  height: 25px;
+  margin-right: 8px;
+}
+
+.teamName {
+  font-weight: bold;
+}
+
+.matchTime {
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+}
+.kingu{
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+}
+
+.power1{
+  max-width: 100%;
+  max-height: 400px;
+  /* background-color: #555; */
+  margin-top: 50px;
+ 
+}
+.power2{
+  max-width: 100%;
+  max-height: 400px;
+  /* background-color: #555; */
+  margin-top: 20px;
+ 
+}
