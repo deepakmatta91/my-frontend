@@ -15,7 +15,7 @@ const CampusStats = () => {
         </div>
         <div className={styles.statBox}>
           <h2 className={styles.statValue}>0%</h2>
-          <p className={styles.statTitle}>Student Satisfaction</p>
+          <p className={styles.statTitle}>deepak Satisfaction</p>
           <p className={styles.statDesc}>
             Our users report faster, safer fixes and quicker technician turnaround on campus.
           </p>
